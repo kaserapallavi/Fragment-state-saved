@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ImperativeAssignment</string>
+    <string name="eventNameSpinnerDefaultValue">Select Occupation</string>
+    <string-array name="occupation">
+        <item>@string/eventNameSpinnerDefaultValue</item>
+        <item>Doctor</item>
+        <item>Software Engineer</item>
+        <item>Mechanical Engineer</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="hintEventName">Occupation</string>
+
+
+</resources>

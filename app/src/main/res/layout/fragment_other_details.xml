@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="fragment"
+            type="com.example.imperativeassignment.ui.OtherDetailsFragment" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:paddingLeft="@dimen/dimen_16dp"
+            android:paddingTop="@dimen/dimen_16dp"
+            android:paddingRight="@dimen/dimen_16dp"
+            android:paddingBottom="@dimen/dimen_24dp">
+
+            <TextView
+                android:id="@+id/lblTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/dimen_6dp"
+                android:text="Other Details"
+                android:textColor="@color/createEventTitleColor"
+                android:textFontWeight="700"
+                android:textSize="@dimen/dimen_txt_24sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lblSubTitle"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:gravity="center_horizontal|top"
+                android:lineSpacingExtra="@dimen/dimen_6dp"
+                android:text="Final step that you are all set !"
+                android:textColor="@color/createEventTitleColor"
+                android:textFontWeight="400"
+                android:textSize="@dimen/dimen_txt_14sp"
+                android:translationY="-3.25sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblTitle" />
+
+
+            <TextView
+                android:id="@+id/lblEventName"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:gravity="top"
+                android:lineSpacingExtra="7sp"
+                android:text="Father's Name"
+                android:textColor="@color/createEventHintColor"
+                android:textFontWeight="400"
+                android:textSize="@dimen/dimen_txt_12sp"
+                android:translationY="-3.5sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblSubTitle" />
+
+            <EditText
+                android:id="@+id/txtFatherName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:background="@drawable/ic_create_event_capsule_edittext_bg"
+                android:hint="Enter your Father's name"
+                android:text="@={fragment.fatherName}"
+                android:inputType="textCapWords"
+                android:maxLength="40"
+                android:paddingLeft="@dimen/dimen_20dp"
+                android:paddingTop="@dimen/dimen_12dp"
+                android:paddingBottom="@dimen/dimen_12dp"
+                android:textColor="@color/createEventTextColor"
+                android:textColorHint="@color/createEventHintColor"
+                android:textSize="@dimen/dimen_txt_16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblEventName" />
+
+            <TextView
+                android:id="@+id/lblStartDateAndTime"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:gravity="top"
+                android:lineSpacingExtra="7sp"
+                android:text="Mother's Name"
+                android:textColor="@color/createEventHintColor"
+                android:textFontWeight="400"
+                android:textSize="@dimen/dimen_txt_12sp"
+                android:translationY="-3.5sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtFatherName" />
+
+            <EditText
+                android:id="@+id/txtMotherName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:background="@drawable/ic_create_event_capsule_edittext_bg"
+                android:hint="Enter your Mother's name"
+                android:maxLength="40"
+                android:text="@={fragment.motherName}"
+                android:paddingLeft="@dimen/dimen_20dp"
+                android:paddingTop="@dimen/dimen_12dp"
+                android:paddingBottom="@dimen/dimen_12dp"
+                android:textColor="@color/createEventTextColor"
+                android:textColorHint="@color/createEventHintColor"
+                android:textSize="@dimen/dimen_txt_16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblStartDateAndTime" />
+
+            <TextView
+                android:id="@+id/lblSelectCategory"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:gravity="top"
+                android:visibility="visible"
+                android:lineSpacingExtra="7sp"
+                android:text="Occupation"
+                android:textColor="@color/createEventHintColor"
+                android:textFontWeight="400"
+                android:textSize="@dimen/dimen_txt_12sp"
+                android:translationY="-3.5sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtMotherName" />
+
+            <!--DIsable for now-->
+            <Spinner
+                android:id="@+id/spnOccupation"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:background="@drawable/spn_backgound"
+                android:entries="@array/occupation"
+                android:overlapAnchor="false"
+                android:paddingLeft="@dimen/dimen_12dp"
+                android:paddingTop="@dimen/dimen_12dp"
+                android:paddingBottom="@dimen/dimen_12dp"
+                android:prompt="@string/hintEventName"
+                android:visibility="visible"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/createEventTextColor"
+                android:textColorHint="@color/createEventHintColor"
+                android:textSize="@dimen/dimen_txt_16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblSelectCategory" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/btnNext"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="@color/createEventSelectedButtonColor"
+                android:gravity="center"
+                android:lineHeight="@dimen/dimen_txt_18sp"
+                android:lineSpacingExtra="0sp"
+                android:onClick="@{v -> fragment.onNextClicked()}"
+                android:paddingLeft="@dimen/dimen_25dp"
+                android:paddingTop="@dimen/dimen_12dp"
+                android:paddingRight="@dimen/dimen_25dp"
+                android:paddingBottom="@dimen/dimen_12dp"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textFontWeight="600"
+                android:textSize="@dimen/dimen_txt_14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spnOccupation" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>

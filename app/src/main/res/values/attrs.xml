@@ -1,0 +1,75 @@
+<resources>
+    <declare-styleable name="FullscreenAttrs">
+        <attr name="fullscreenBackgroundColor" format="color" />
+        <attr name="fullscreenTextColor" format="color" />
+    </declare-styleable>
+
+    <!--CustomHobNobRadio-->
+    <declare-styleable name="CustomRadioGroup">
+        <attr name="RadioCheckedId" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="CustomRadioButton">
+        <attr name="title" format="string" />
+        <attr name="subtitle" format="string" />
+        <attr name="isChecked" format="boolean" />
+    </declare-styleable>
+
+<!--    StepComplitionForRecyclerView-->
+    <declare-styleable name="StepComplitionView">
+        <attr name="marker" format="color|reference" />
+        <attr name="markerSize" format="dimension" />
+        <attr name="completedMileStoneLineColor" format="color" />
+        <attr name="inCompleteMileStoneLineColor" format="color" />
+        <attr name="lineWidth" format="dimension" />
+        <attr name="lineStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="dash" value="1" />
+        </attr>
+        <attr name="markerPosition" format="enum">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="center" value="2" />
+        </attr>
+        <attr name="lineStyleDashGap" format="dimension" />
+        <attr name="lineStyleDashLength" format="dimension" />
+        <attr name="lineOrientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="linePadding" format="dimension" />
+    </declare-styleable>
+
+    <!--StepHobNobViewPagerView-->
+    <declare-styleable name="StepView">
+        <attr name="sv_selectedCircleColor" format="color" />
+        <attr name="sv_selectedCircleRadius" format="dimension" />
+        <attr name="sv_selectedTextColor" format="color" />
+        <attr name="sv_selectedStepNumberColor" format="color" />
+        <attr name="sv_stepNumberTextSize" format="dimension" />
+        <attr name="sv_doneStepMarkColor" format="color" />
+        <attr name="sv_doneCircleColor" format="color" />
+        <attr name="sv_doneCircleRadius" format="dimension" />
+        <attr name="sv_doneTextColor" format="color" />
+        <attr name="sv_nextTextColor" format="color" />
+        <attr name="sv_nextStepLineColor" format="color" />
+        <attr name="sv_doneStepLineColor" format="color" />
+        <attr name="sv_stepPadding" format="dimension" />
+        <attr name="sv_textPadding" format="dimension" />
+        <attr name="sv_stepLineWidth" format="dimension" />
+        <attr name="sv_textSize" format="dimension" />
+        <attr name="sv_background" format="color" />
+        <attr name="sv_animationDuration" format="integer" />
+        <attr name="sv_stepViewStyle" format="reference" />
+        <attr name="sv_animationType" format="enum">
+            <enum name="Line" value="0" />
+            <enum name="Circle" value="1" />
+            <enum name="All" value="2" />
+            <enum name="None" value="3" />
+        </attr>
+        <attr name="sv_stepsNumber" format="integer" />
+        <attr name="sv_steps" format="reference" />
+        <attr name="sv_typeface" format="reference" />
+        <attr name="sv_nextStepCircleEnabled" format="boolean" />
+        <attr name="sv_nextStepCircleColor" format="color" />
+    </declare-styleable>
+</resources>

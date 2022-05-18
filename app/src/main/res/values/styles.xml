@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="StepHobNobViewPagerViewStyle">
+        <item name="sv_selectedCircleColor">@color/colorCompeletedMileStone</item>
+        <item name="sv_selectedCircleRadius">@dimen/dimen_6dp</item>
+        <item name="sv_selectedTextColor">@color/colorCompeletedMileStone</item>
+        <item name="sv_selectedStepNumberColor">@color/colorCompeletedMileStone</item>
+        <item name="sv_stepNumberTextSize">@dimen/dimen_txt_12sp</item>
+        <item name="sv_doneStepMarkColor">@color/colorInCompeletedMileStone</item>
+        <item name="sv_doneCircleColor">@color/colorInCompeletedMileStone</item>
+        <item name="sv_doneCircleRadius">@dimen/dimen_6dp</item>
+        <item name="sv_doneTextColor">@color/colorInCompeletedMileStone</item>
+        <item name="sv_nextTextColor">@color/colorInCompeletedMileStone</item>
+        <item name="sv_nextStepLineColor">@color/colorInCompeletedMileStone</item>
+        <item name="sv_doneStepLineColor">@color/colorInCompeletedMileStone</item>
+        <item name="sv_stepPadding">@dimen/dimen_12dp</item>
+        <item name="sv_textPadding">@dimen/dimen_12dp</item>
+        <item name="sv_stepLineWidth">0.1dp</item>
+        <item name="sv_animationDuration">200</item>
+        <item name="sv_textSize">@dimen/dimen_txt_14sp</item>
+        <item name="sv_animationType">Line</item>
+    </style>
+
+
+
+</resources>

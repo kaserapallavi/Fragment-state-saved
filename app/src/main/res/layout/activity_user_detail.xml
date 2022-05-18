@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="activity"
+            type="com.example.imperativeassignment.ui.UserDetailActivity" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layTitleBar"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/dimen_8dp"
+            android:background="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <!--Back Button-->
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{v -> activity.onBackClicked()}"
+                android:padding="@dimen/dimen_15dp"
+                android:visibility="invisible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_arrow_back"
+                />
+
+            <TextView
+                android:id="@+id/lblTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_txt_16sp"
+                android:lineSpacingExtra="@dimen/dimen_txt_4sp"
+                android:translationY="-2sp"
+                android:textFontWeight="600"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.example.imperativeassignment.customview.stepcomplitionforrecyclerview.StepComplitionForRecyclerView
+            android:id="@+id/layIndicator"
+            android:layout_width="@dimen/dimen_150dp"
+            android:layout_height="@dimen/dimen_0dp"
+            android:elevation="@dimen/dimen_4dp"
+            android:padding="@dimen/dimen_15dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            app:completedMileStoneLineColor="@color/colorInCompeletedMileStone"
+            app:inCompleteMileStoneLineColor="@color/colorInCompeletedMileStone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/layTitleBar"
+            app:lineOrientation="horizontal"
+            app:lineStyle="dash"
+            app:lineWidth="@dimen/dimen_1dp"
+            app:marker="@drawable/ic_step_incompleted_tick"
+            app:markerSize="@dimen/dimen_20dp" />
+
+        <com.example.imperativeassignment.customview.stepviewpagerview.StepViewPagerView
+            android:id="@+id/layStepIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_16dp"
+            android:paddingBottom="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:paddingLeft="@dimen/dimen_80dp"
+            android:paddingRight="@dimen/dimen_80dp"
+            app:sv_animationType="All"
+            app:sv_stepPadding="@dimen/dimen_10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layTitleBar"
+            />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vpCreateEvent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layStepIndicator" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

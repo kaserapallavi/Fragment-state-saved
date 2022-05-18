@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+
+        <layer-list>
+
+            <item>
+                 <!-- <shape android:shape="rectangle">
+                      <padding
+                          android:left="@dimen/dimen_4dp"
+                          android:top="@dimen/dimen_10dp"
+                          android:right="@dimen/dimen_4dp"
+                          android:bottom="@dimen/dimen_10dp"
+                          />
+
+                      <gradient android:startColor="#00c4c7a9"
+                          android:endColor="#00d6dadf" android:angle="270" />
+                      <stroke android:width="2px"
+                          android:color="@color/themeyellow" />
+                      <corners android:radius="@dimen/dimen_8dp" />
+                  </shape>-->
+                <vector
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:aapt="http://schemas.android.com/aapt"
+                    android:width="328dp"
+                    android:height="50dp"
+                    android:viewportWidth="328"
+                    android:viewportHeight="50"
+                    >
+
+                    <group>
+
+                        <clip-path
+                            android:pathData="M25 0H303C316.807 0 328 11.1929 328 25C328 38.8071 316.807 50 303 50H25C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0Z"
+                            />
+
+                        <path
+                            android:pathData="M0 0V50H328V0"
+                            android:fillColor="#FFFFFF"
+                            />
+
+                        <path
+                            android:pathData="M25 0H303C316.807 0 328 11.1929 328 25C328 38.8071 316.807 50 303 50H25C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0Z"
+                            android:strokeWidth="2"
+                            android:strokeColor="#DADADA"
+                            />
+
+                    </group>
+
+                </vector>
+
+            </item>
+
+            <item android:gravity="center|right" android:right="@dimen/dimen_15dp">
+
+                <vector xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:width="@dimen/dimen_20dp" android:height="@dimen/dimen_20dp"
+                    android:tint="@color/createEventTextColor" android:viewportWidth="24" android:viewportHeight="24">
+                    <path android:fillColor="@android:color/white" android:pathData="M7.41,8.59L12,13.17l4.59,-4.58L18,10l-6,6 -6,-6 1.41,-1.41z" />
+                </vector>
+
+            </item>
+
+        </layer-list>
+
+    </item>
+
+</selector>

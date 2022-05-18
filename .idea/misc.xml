@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Pallavi/ref project/ImperativeAssignment/app/src/main/res/drawable-v24/ic_create_event_capsule_edittext_bg.xml" value="0.146" />
+        <entry key="..\:/Pallavi/ref project/ImperativeAssignment/app/src/main/res/drawable-v24/ic_create_event_roundcorner_edittext_bg.xml" value="0.146" />
+        <entry key="..\:/Pallavi/ref project/ImperativeAssignment/app/src/main/res/drawable-v24/spn_backgound.xml" value="0.146" />
+        <entry key="..\:/Pallavi/ref project/ImperativeAssignment/app/src/main/res/drawable/ic_step_completed_tick.xml" value="0.146" />
+        <entry key="..\:/Pallavi/ref project/ImperativeAssignment/app/src/main/res/drawable/ic_step_incompleted_tick.xml" value="0.146" />
+        <entry key="..\:/Pallavi/ref project/ImperativeAssignment/app/src/main/res/layout/activity_user_detail.xml" value="0.25" />
+        <entry key="..\:/Pallavi/ref project/ImperativeAssignment/app/src/main/res/layout/fragment_address_details.xml" value="0.25" />
+        <entry key="..\:/Pallavi/ref project/ImperativeAssignment/app/src/main/res/layout/fragment_basic_details.xml" value="0.25" />
+        <entry key="..\:/Pallavi/ref project/ImperativeAssignment/app/src/main/res/layout/fragment_other_details.xml" value="0.24444444444444444" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
